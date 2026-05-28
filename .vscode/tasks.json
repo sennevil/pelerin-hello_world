@@ -16,6 +16,17 @@
       ],
       "group": "build"
 
+        },
+        {
+            "label": "Run program",
+            "type": "shell",
+            "command": "apptainer",
+            "args": [
+                "exec",
+                "/home/sennsi01/sims/app/sif/singu_rocky8_HPC_Pel.sif",
+                "./hello.x"
+            ],
+            "group": "build"
         }
     ]
 }
