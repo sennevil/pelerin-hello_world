@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+      "label": "Compile Fortran (Apptainer)",
+      "type": "shell",
+      "command": "apptainer",
+      "args": [
+        "exec",
+        "/home/sennsi01/sims/app/sif/singu_rocky8_HPC_Pel.sif",
+        "bash",
+        "-c",
+        "source /opt/intel/oneapi/setvars.sh && ifort hello.f90 -o hello.x"
+      ],
+      "group": "build"
+
+        }
+    ]
+}
