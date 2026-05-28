@@ -1,4 +1,4 @@
 program hello
   implicit none
-  print *, "Hello World from HPC container!"
+  write(*,'i') "Hello World from HPC container!"
 end program hello
